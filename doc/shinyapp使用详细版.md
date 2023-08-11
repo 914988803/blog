@@ -1,7 +1,7 @@
 ---
 title: shinyapp的安装与使用
 date: 2023-05-18
-tags: - docker
+tags: -docker
       -笔记
 categories: docker
 ---
