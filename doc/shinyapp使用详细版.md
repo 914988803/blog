@@ -1,9 +1,10 @@
+---
 title: shinyapp的安装与使用
 date: 2023-05-18
 tags: - docker
       -笔记
 categories: docker
-
+---
 
 ```bash
 docker run -d --name shinyapp -p 3838:3838 \
