@@ -1,0 +1,53 @@
+title: 个人NAS记录
+
+date: 2023-09-07
+
+tags:
+
+  - 硬件
+
+  - NAS
+
+categories: 杂谈
+
+### 0.系统及配置选择
+系统使用的是ESXI，版本:7.0 Update 3
+|cpu|主板|内存|显卡|主硬盘|机箱|系统|
+|--|--|--|--|---|--|--|
+|qn8j|豆希b365|16g* 2|Tesla p4| 1tSSD|6盘位itx|ESXI 7U3
+
+# 1.系统安装
+官网、镜像站下载iso镜像并写入u盘，为了节约盘位，我将系统安装至另外一个u盘上， 从安装（20230609）至今（20230907）除断电外，均稳定运行。
+# 2.ESXI系统配置
+ESXI中，我安装了Ubuntu22.04、win10、黑群晖。
+其中Ubuntu分配了6个个cpu核心8gb内存，以及sata直通，Ubuntu被用作为主要的nas系统，win10直通了tesla p4来跑ai图（好久没跑过了）、黑群晖主要是体验一下群辉系统
+# 3.Ubuntu配置
+安装好Ubuntu操作系统后，首先应该修改各种镜像
+## 3.1docker镜像修改为国内镜像站
+``` bash
+sudo vi /etc/docker/daemon.json
+```
+再写入以下内容
+``` bash
+{
+   "registry-mirrors": ["http://hub-mirror.c.163.com"]
+}
+```
+## 3.2 ubunu的apt 命令改为国内镜像
+备份原始的源列表文件
+```bash
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+```
+编辑 sources.list 文件
+```bash
+sudo vi /etc/apt/sources.list
+
+```
+
+
+
+
+
+<iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe>
+
+
