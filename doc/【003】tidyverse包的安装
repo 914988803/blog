@@ -1,11 +1,11 @@
 ---
 title: tidyverse包的安装
 date: 2023-05-18
-tags: -R
-      -生信
-      -笔记
+tags: -生信
+      -R
 categories: 生信
 ---
+
 ## 1.安装相关依赖
 
 ```bash
