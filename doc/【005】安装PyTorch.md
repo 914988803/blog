@@ -1,7 +1,8 @@
 ---
 title: 安装PyTorch
 date: 2022-05-08
-tags:  - PyTorch
+tags:
+       - PyTorch
        - pip
        - 镜像安装
 categories: python
